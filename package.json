@@ -1,0 +1,31 @@
+{
+  "name": "lightning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tauri": "./node_modules/.bin/tauri",
+    "build:client": "./node_modules/.bin/esbuild ./client/index.tsx --bundle --outfile=./dist/client/index.js",
+    "build:server": "./node_modules/.bin/esbuild ./server/index.ts --bundle --platform=node --target=node14 --outfile=./dist/server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevindurb/lightning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevindurb/lightning/issues"
+  },
+  "homepage": "https://github.com/kevindurb/lightning#readme",
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.0.2",
+    "@tsconfig/recommended": "^1.0.1",
+    "esbuild": "^0.14.48",
+    "live-server": "^1.2.2",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  }
+}
