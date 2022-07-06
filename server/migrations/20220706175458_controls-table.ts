@@ -3,6 +3,7 @@ import { Knex } from 'knex';
 export async function up(knex: Knex): Promise<void> {
   await knex.schema.createTable('controls', (table) => {
     table.increments();
+    table.text('name');
     table.enum('type', ['button', 'slider']);
     table.timestamps();
   });
