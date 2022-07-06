@@ -1,0 +1,10 @@
+import { database } from '../database';
+import { first } from '../utils/array';
+import { Control } from '../types/control';
+
+export { Control };
+
+export const getList = () => database<Control>('controls').select('*');
+
+export const getById = (id: number) =>
+  database<Control>('controls').where({ id }).then(first);
