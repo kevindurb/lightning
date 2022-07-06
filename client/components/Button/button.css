@@ -7,3 +7,8 @@ button {
   min-width: var(--size-4);
   padding: var(--size-1);
 }
+
+button.selected {
+  background-color: var(--primary);
+  color: var(--background);
+}

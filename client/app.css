@@ -1,6 +1,6 @@
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
+  --background: #dddddd;
+  --foreground: #222222;
   --primary: #ff0000;
 
   --size-1: 8px;
@@ -15,8 +15,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
-    --foreground: #ffffff;
+    --background: #222222;
+    --foreground: #dddddd;
   }
 }
 

@@ -5,3 +5,7 @@ nav.header {
   align-items: center;
   padding: var(--size-1)
 }
+
+.header button + button {
+  margin-left: var(--size-1);
+}
