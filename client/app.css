@@ -2,6 +2,15 @@
   --background: #ffffff;
   --foreground: #000000;
   --primary: #ff0000;
+
+  --size-1: 8px;
+  --size-2: 16px;
+  --size-3: 24px;
+  --size-4: 32px;
+  --size-5: 40px;
+  --size-6: 48px;
+  --size-7: 56px;
+  --size-8: 64px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -11,7 +20,17 @@
   }
 }
 
-body {
+html, body {
   color: var(--foreground);
   background-color: var(--background);
+  padding: 0;
+  margin: 0
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html *, html *::after, html *::before {
+  box-sizing: inherit;
 }

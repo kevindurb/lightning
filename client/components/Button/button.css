@@ -3,6 +3,7 @@ button {
   background-color: transparent;
   border: 1px solid var(--primary);
   border-radius: 4px;
-  min-height: 32px;
-  min-width: 32px;
+  min-height: var(--size-4);
+  min-width: var(--size-4);
+  padding: var(--size-1);
 }
