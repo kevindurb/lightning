@@ -27,8 +27,9 @@ html, body {
   margin: 0
 }
 
-html {
+html, button {
   box-sizing: border-box;
+  font-family: monospace;
 }
 
 html *, html *::after, html *::before {

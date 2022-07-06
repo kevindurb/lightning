@@ -13,7 +13,10 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   selected,
 }) => (
-  <button onClick={onClick} className={classNames({ selected })}>
+  <button
+    onClick={onClick}
+    className={classNames('button', { 'button--selected': selected })}
+  >
     {children}
   </button>
 );
