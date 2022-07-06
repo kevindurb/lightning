@@ -10,8 +10,8 @@ import typeDefs from './typedefs';
 async function startServer(typeDefs: any, resolvers: any) {
   const app = express();
 
-  app.use(express.static(path.join(__dirname, '../../assets/')));
-  app.use(express.static(path.join(__dirname, '../client/')));
+  app.use(express.static(path.join(__dirname, '../assets/')));
+  app.use(express.static(path.join(__dirname, '../dist/client/')));
 
   const httpServer = http.createServer(app);
   const server = new ApolloServer({

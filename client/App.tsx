@@ -1,6 +1,7 @@
 import React from 'react';
 import { useQuery, gql } from '@apollo/client';
 import { Button } from './components/Button/Button';
+import './app.css';
 
 const query = gql`
   query Ping {
