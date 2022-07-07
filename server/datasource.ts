@@ -1,4 +1,4 @@
-import TypeORM from 'typeorm';
+import * as TypeORM from 'typeorm';
 import path from 'path';
 
 import { CuelistEntity } from './entities/CuelistEntity';

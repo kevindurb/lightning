@@ -1,6 +1,6 @@
 import { ApolloServer } from 'apollo-server-express';
 import { ApolloServerPluginDrainHttpServer } from 'apollo-server-core';
-import TypeGraphQL from 'type-graphql';
+import * as TypeGraphQL from 'type-graphql';
 import express from 'express';
 import http from 'http';
 import path from 'path';
