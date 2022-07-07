@@ -7,4 +7,5 @@ export const datasource = new TypeORM.DataSource({
   type: 'sqlite',
   database: path.join(__dirname, '../db.sqlite3'),
   entities: [CuelistEntity],
+  synchronize: true,
 });
